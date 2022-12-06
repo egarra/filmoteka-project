@@ -1,0 +1,38 @@
+.loading {
+  display: flex;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  color: $accent-color;
+}
+
+.loading__sign {
+  font-size: 4vh;
+}
+
+.loading__spinner {
+  margin-left: 15px;
+  width: 8vh;
+  height: 8vh;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side, $accent-color 94%, #0000)
+      top/14.1px 14.1px no-repeat,
+    conic-gradient(#0000 30%, $accent-color);
+  -webkit-mask: radial-gradient(
+    farthest-side,
+    #0000 calc(100% - 14.1px),
+    #000 0
+  );
+  animation: spinner 1s infinite linear;
+}
+
+@keyframes spinner {
+  100% {
+    transform: rotate(1turn);
+  }
+}

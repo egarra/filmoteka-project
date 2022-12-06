@@ -1,0 +1,100 @@
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.tui-pagination {
+  display: flex;
+}
+
+.page-btn,
+.tui-next-is-ellip,
+.tui-prev-is-ellip {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-weight: $medium-weight;
+}
+
+.is-selected {
+  background-color: $accent-color;
+}
+
+.page {
+  &-prev {
+    order: -1;
+    background-image: url(../images/arrow-right.png);
+  }
+  &-next {
+    order: 1;
+    background-image: url(../images/arrow-left.png);
+  }
+
+  &-prev,
+  &-next {
+    background-color: $grey-background-color;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.page-first,
+.page-last {
+  @media screen and (max-width: 799px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.tui-next-is-ellip,
+.tui-prev-is-ellip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 799px) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+// .page-first,
+// .page-last,
+// .tui-is-disabled .tui-prev,
+// .tui-is-disabled .tui-first,
+.tui-ico-first,
+.tui-ico-prev,
+.tui-ico-last,
+.tui-ico-next {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

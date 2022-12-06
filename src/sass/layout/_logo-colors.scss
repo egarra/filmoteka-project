@@ -1,0 +1,24 @@
+.header-logo__title {
+  background: linear-gradient(
+    to right,
+    $white-text-color 35%,
+    $secondary-text-color 37%,
+    $accent-color 45%,
+    #aa0404 65%,
+    $accent-color 73%,
+    $secondary-text-color 75%,
+    $white-text-color 100%
+  );
+  background-size: 400%;
+  -webkit-background-clip: text;
+  animation: logoColors linear 20s infinite;
+}
+
+@keyframes logoColors {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}

@@ -1,0 +1,48 @@
+<header class="header" id="home">
+  <div class="particles">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <a href="./index.html" class="header-logo__link">
+        <img src="./images/film.png" alt="logo" class="header-logo__icon" />
+        <span class="header-logo__title">Filmoteka</span>
+      </a>
+      <nav class="header__nav">
+        <ul class="header-nav__list">
+          <li class="header-nav__item">
+            <a href="./index.html" class="header-nav__link current" data-home>HOME</a>
+          </li>
+          <li class="header-nav__item">
+            <a href="./library.html" class="header-nav__link my-library" data-library>MY LIBRARY</a>
+          </li>
+          <li class="header-nav__item">
+            <button class="header-nav__link login-button">LOGIN</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <form class="header__form" id="search-form">
+      <label for="searchQuery" class="header-form__label">
+        <input class="header__input" type="text" name="searchQuery" autocomplete="off" placeholder="Movie search"
+          required />
+      </label>
+      <button class="header-form__btn" type="submit">
+        <img src="./images/search 2.png" alt="search" class="header-form__icon" />
+      </button>
+    </form>
+    <span class="header-error__text"></span>
+    <div class="user-info">
+      <div class="user-info__name"></div>
+    </div>
+  </div>
+</header>
